@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Digital Scavenger Hunt{% endblock %}
+{% block content %}
+<h1>Welcome to FileHunt</h1>
+
+<p class="offset"><b>somewhere in these files there are answers.</b></p>
+
+<div class="box offset">
+    <p>Download files. Search for hidden answers. Submit what you find. Climb the scoreboard.</p>
+    <p>
+        <a href="/challenges">Browse challenges</a><br>
+        <a href="/create">Upload a new challenge</a><br>
+        <a href="/scoreboard">View the scoreboard</a>
+    </p>
+</div>
+
+<div class="box crooked">
+    <h2>How It Works</h2>
+    <ol>
+        <li>Download the challenge file.</li>
+        <li>Dig around until you find the hidden answer.</li>
+        <li>Submit the answer and collect points.</li>
+    </ol>
+</div>
+{% endblock %}
