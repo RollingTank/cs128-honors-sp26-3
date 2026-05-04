@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ challenge.title }}{% endblock %}
+{% block content %}
+<p><a href="/challenges">&lt;&lt; back to challenges</a></p>
+
+<div class="box offset">
+    <h1>{{ challenge.title }}</h1>
+    <p>{{ challenge.description }}</p>
+    <div class="row muted">difficulty: <span class="difficulty">{{ challenge.difficulty }}</span></div>
+    <div class="row muted">points: {{ challenge.points }}</div>
+    <div class="row muted">solves: {{ challenge.solves }}</div>
+    <div class="row"><a href="/download/{{ challenge.id }}">Download file: {{ challenge.filename }}</a></div>
+</div>
+
+{% if message != "" %}
+    {% if success %}
+    <div class="alert alert-success">{{ message }}</div>
+    {% else %}
+    <div class="alert alert-error">{{ message }}</div>
+    {% endif %}
+{% endif %}
+
+<div class="box crooked" style="max-width: 650px;">
+    <h2>Submit Answer</h2>
+    <form method="POST" action="/challenge/{{ challenge.id }}/submit">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required>
+        <label for="answer">Answer</label>
+        <input type="text" id="answer" name="answer" placeholder="What did you find?" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

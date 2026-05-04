@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Challenges{% endblock %}
+{% block content %}
+<h1>Challenges</h1>
+<p class="muted offset">Explore the digital scavenger hunt challenges below!</p>
+
+<div class="challenges-list">
+    {% for challenge in challenges %}
+    <div class="challenge-card">
+        <h2>{{ challenge.title }}</h2>
+        <p><strong>Difficulty:</strong> {{ challenge.difficulty }}</p>
+        <p><strong>Points:</strong> {{ challenge.points }}</p>
+        <p><strong>Solves:</strong> {{ challenge.solves }}</p>
+        <p><strong>Description:</strong> {{ challenge.description }}</p>
+        <a href="/download/{{ challenge.id }}" class="btn">Download File</a>
+        <a href="/challenge/{{ challenge.id }}" class="btn">View Details</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% if challenges.is_empty() %}
+<p class="muted offset">No challenges available yet. Be the first to create one!</p>
+{% endif %}
+
+<style>
+.challenges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.challenge-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.challenge-card h2 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+</style>
+{% endblock %}
