@@ -8,7 +8,7 @@ function App() {
     const form = e.target
     setStatus('submitting')
     try {
-      const res = await fetch('https://rust-c5706-default-rtdb.firebaseio.com/puzzles.json', {
+      const res = await fetch('http://localhost:3000/api/puzzles', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

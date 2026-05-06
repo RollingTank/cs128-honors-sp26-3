@@ -13,7 +13,6 @@ function App() {
         <p>
           <Link to="/browse">Browse challenges</Link>
           <Link to="/create">Upload a new challenge</Link>
-          <Link to="/scoreboard">View the scoreboard</Link>
         </p>
       </div>
 
