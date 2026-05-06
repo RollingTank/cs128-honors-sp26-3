@@ -1,13 +1,15 @@
 # cs128-honors-sp26
 
 ## Group Members
-Shreyas Das (das41@illinois.edu)
-
-Tanush Kulkarni (tanushk2@illinois.edu)
 
 Yash Gulati (ygulati2@illinois.edu)
 
 Abhinav Raj (araj10@illinois.edu)
+
+Shreyas Das (das41@illinois.edu)
+
+Tanush Kulkarni (tanushk2@illinois.edu)
+
 
 ## Project Introduction
 
@@ -46,3 +48,14 @@ By checkpoint two, we want 90% of the project to be done. This means have all of
 ## Possible Challenges
 
  This project has several key challenges. To begin, we may need to learn new rust crates that we are not familiar with. Learning this will take time and may intially cause a few errors. Secondly, we need to ensure that the final project is able to properly incorporate the various features we intended. Since we are all working on seperate branches, it is crucial that the final main branch has all of the code from these branches and no code is lost. There maybe issues surrounding merge conflicts. Finally, the input validation for this project poses a significant challenge and may be difficult to implement. 
+
+
+ ## External Code and Tooling Attribution
+
+This project uses the following external tools and libraries:
+
+- **Claude**: We used Claude as an AI coding assistant to help brainstorm implementation ideas, debug code, and generate small portions of starter code that were then reviewed, modified, and integrated by the team.
+- **Firebase**: We used Firebase for backend-related functionality, including storing project data such as user information, challenge metadata, uploaded files, and submissions.
+- **Vite**: We used Vite as the frontend build tool and development server for setting up and running the web application efficiently.
+
+All externally assisted or generated code was reviewed and adapted by the team to fit the requirements of our CS 128 Honors project.
