@@ -1,13 +1,15 @@
 # cs128-honors-sp26
 
 ## Group Members
-Shreyas Das (das41@illinois.edu)
-
-Tanush Kulkarni (tanushk2@illinois.edu)
 
 Yash Gulati (ygulati2@illinois.edu)
 
 Abhinav Raj (araj10@illinois.edu)
+
+Shreyas Das (das41@illinois.edu)
+
+Tanush Kulkarni (tanushk2@illinois.edu)
+
 
 ## Project Introduction
 
